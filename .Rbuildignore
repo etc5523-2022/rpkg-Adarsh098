@@ -1,3 +1,4 @@
-^yourpkg\.Rproj$
+^rbirds\.pkg\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^data-raw$
