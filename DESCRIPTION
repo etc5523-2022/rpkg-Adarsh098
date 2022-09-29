@@ -1,4 +1,4 @@
-Package: Rbirds.data
+Package: rbirds.pkg
 Title: Birds counted in Ontario during Christmas.
 Version: 0.0.0.9000
 Authors@R: 
