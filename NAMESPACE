@@ -3,5 +3,6 @@
 export("%>%")
 export(count_by_hours)
 export(most_birds)
+export(shiny_app)
 export(yearly_count)
 importFrom(magrittr,"%>%")
