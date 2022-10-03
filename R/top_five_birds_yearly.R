@@ -6,9 +6,8 @@
 #' top_five_birds_yearly(1960)
 #' @export
 top_five_birds_yearly <- function(num) {
-  year <- NULL
-  if (nrow(rbirds.pkg::yearly_data %>% filter(year == num)) > 0) {
-    return (rbirds.pkg::yearly_data %>% filter(year == num))
+  if (nrow(rbirds.pkg::yearly_data %>% dplyr::filter(year == num)) > 0) {
+    return (rbirds.pkg::yearly_data %>% dplyr::filter(year == num))
   } else {
     return (NULL)
   }

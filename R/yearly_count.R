@@ -7,8 +7,8 @@
 #' @export
 yearly_count <- function(num) {
   year <- NULL
-  if (nrow(rbirds.pkg::year_data %>% filter(year == num)) > 0) {
-    return (rbirds.pkg::year_data %>% filter(year == num))
+  if (nrow(rbirds.pkg::year_data %>% dplyr::filter(year == num)) > 0) {
+    return (rbirds.pkg::year_data %>% dplyr::filter(year == num))
   }
   else {
     return (NULL)

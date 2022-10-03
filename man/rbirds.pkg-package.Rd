@@ -8,6 +8,13 @@
 \description{
 This packages contains data about birds counted in Christmas in Ontario from 1921 to 2017. The data is retrieved from the tidytuesday project on GitHub. This package allows users to explore the data with various functions.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://etc5523-2022.github.io/rpkg-Adarsh098/}
+}
+
+}
 \author{
 \strong{Maintainer}: Adarsh More \email{amor0060@student.monash.edu}
 
