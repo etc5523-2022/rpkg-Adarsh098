@@ -6,6 +6,7 @@ bird_counts <- bird_counts[complete.cases(bird_counts), ]
 
 usethis::use_data(bird_counts, overwrite = TRUE)
 
+
 ## code to prepare `yearly_data` dataset goes here
 
 yearly_data <- bird_counts %>%
@@ -16,6 +17,19 @@ yearly_data <- bird_counts %>%
   dplyr::slice(1:5)
 
 usethis::use_data(yearly_data, overwrite = TRUE)
+
+
+## code to prepare `year_data` dataset goes here
+
+year_data <- bird_counts %>%
+  dplyr::select(year, species, how_many_counted) %>%
+  dplyr::group_by(year, species) %>%
+  dplyr::summarize(how_many_counted = sum(how_many_counted)) %>%
+  dplyr::arrange(desc(how_many_counted)) %>%
+  dplyr::slice(1)
+
+usethis::use_data(year_data, overwrite = TRUE)
+
 
 ## code to prepare `hourly_data` dataset goes here
 

@@ -11,6 +11,6 @@ An object of class \code{grouped_df} (inherits from \code{tbl_df}, \code{tbl}, \
 yearly_data
 }
 \description{
-This data set is a subset of the bird_counts data set and it shows the top five most counted birds in each year. This data was created for the function yearly_count. This data is also used for the parameterised version of the plot in panel 4 of the shiny application.
+This data set is a subset of the bird_counts data set and it shows the top five most counted birds in each year. This data was created for the function top_five_birds_yearly. This data is also used for the parameterised version of the plot in panel 4 of the shiny application.
 }
 \keyword{datasets}

@@ -1,0 +1,19 @@
+---
+title: "Birds Watched in Christmas"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Birds Watched in Christmas}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rbirds.pkg)
+```
