@@ -13,7 +13,7 @@ yearly_data <- bird_counts %>%
   dplyr::group_by(year, species) %>%
   dplyr::summarize(how_many_counted = sum(how_many_counted)) %>%
   dplyr::arrange(desc(how_many_counted)) %>%
-  dplyr::slice(1:3)
+  dplyr::slice(1:5)
 
 usethis::use_data(yearly_data, overwrite = TRUE)
 

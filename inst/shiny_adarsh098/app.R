@@ -59,6 +59,14 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                              h3("Correlation between bird count and hours"),
                              plotlyOutput("myplot4")),
 
+                    tabPanel("Top five birds counted in each year",
+                             column(width = 4,
+                                    selectInput(inputId = "year",
+                                                label = "Select Year",
+                                                choices = yearly_data$year)),
+                             h3("Top five birds counted in each year"),
+                             plotlyOutput("newplot"))
+
 
                   )
 
@@ -140,6 +148,30 @@ server <- function(input, output, session) {
       ggplotly(g4)
   })
 
+  data_5 <- reactive({
+    yearly_data <- bird_counts %>%
+      dplyr::select(year, species, how_many_counted) %>%
+      dplyr::filter(year %in% input$year) %>%
+      dplyr::group_by(year, species) %>%
+      dplyr::summarize(how_many_counted = sum(how_many_counted)) %>%
+      dplyr::arrange(desc(how_many_counted)) %>%
+      dplyr::slice(1:5)
+  })
+
+  output$newplot <- renderPlotly({
+
+    g5 <- ggplot(data_5(),
+                 aes(x = species,
+                     y = how_many_counted,
+                     fill = species)) +
+      geom_col() +
+      theme_bw() +
+      theme(legend.position = "bottom") +
+      theme(text = element_text(size = 15)) +
+      labs(x = "Year",
+           y = "Bird Count")
+    ggplotly(g5)
+  })
 
     output$about <- renderUI({
       knitr::knit("about.Rmd", quiet = TRUE) %>%
