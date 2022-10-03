@@ -34,10 +34,18 @@ These functions are as follows:
 ### Examples
 
 ```{r ex1}
-count_by_hours(10000)
+most_birds()
 ```
 
 ```{r ex2}
-most_birds()
+yearly_count(1960)
+```
+
+```{r ex3}
+count_by_hours(10000)
+```
+
+```{r ex4}
+top_five_birds_yearly(1950)
 ```
 
