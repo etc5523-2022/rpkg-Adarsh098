@@ -84,9 +84,6 @@
 <h3 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/count_by_hours.html">count_by_hours</a></span><span class="op">(</span><span class="fl">10000</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Between 80 and 169 hours"</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/most_birds.html">most_birds</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 5 × 2</span></span></span>
 <span><span class="co">#&gt;   species           how_many_counted</span></span>
@@ -96,6 +93,27 @@
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Canada Goose                <span style="text-decoration: underline;">173</span>713</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Long-tailed Duck            <span style="text-decoration: underline;">154</span>315</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Greater Scaup               <span style="text-decoration: underline;">152</span>444</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/yearly_count.html">yearly_count</a></span><span class="op">(</span><span class="fl">1960</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 3</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># Groups:   year [1]</span></span></span>
+<span><span class="co">#&gt;    year species      how_many_counted</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>  <span style="text-decoration: underline;">1</span>960 Herring Gull            <span style="text-decoration: underline;">10</span>000</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/count_by_hours.html">count_by_hours</a></span><span class="op">(</span><span class="fl">10000</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Between 80 and 169 hours"</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/top_five_birds_yearly.html">top_five_birds_yearly</a></span><span class="op">(</span><span class="fl">1950</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 5 × 3</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># Groups:   year [1]</span></span></span>
+<span><span class="co">#&gt;    year species               how_many_counted</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>  <span style="text-decoration: underline;">1</span>950 European Starling                 <span style="text-decoration: underline;">3</span>075</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>  <span style="text-decoration: underline;">1</span>950 Herring Gull                      <span style="text-decoration: underline;">2</span>750</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>  <span style="text-decoration: underline;">1</span>950 House Sparrow                     <span style="text-decoration: underline;">1</span>482</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span>  <span style="text-decoration: underline;">1</span>950 Common Merganser                  <span style="text-decoration: underline;">1</span>240</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span>  <span style="text-decoration: underline;">1</span>950 American Tree Sparrow              695</span></span></code></pre></div>
 </div>
   </main>
 </div>
