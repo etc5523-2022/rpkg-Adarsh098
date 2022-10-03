@@ -2,7 +2,7 @@ Package: rbirds.pkg
 Title: Birds counted in Ontario during Christmas.
 Version: 0.0.0.9000
 Authors@R: 
-    person("Adarsh", "More", "amor0060@student.monash.edu", role = c("aut", "cre"))
+    person("Adarsh", "More", , "amor0060@student.monash.edu", role = c("aut", "cre"))
 Description: This packages contains data about birds counted in Christmas in Ontario from 1921 to 2017. The data is retrieved from the tidytuesday project on GitHub. This package allows users to explore the data with various functions. 
 License: MIT + file LICENSE
 Encoding: UTF-8
