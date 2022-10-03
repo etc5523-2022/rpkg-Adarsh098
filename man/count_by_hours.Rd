@@ -6,6 +6,12 @@
 \usage{
 count_by_hours(how_many_counted)
 }
+\arguments{
+\item{how_many_counted}{A numeric input greater than 0}
+}
 \description{
 A function that takes the count of birds as an input and allows the user to view the number of hours it took to count that many birds.
+}
+\examples{
+count_by_hours(5000)
 }

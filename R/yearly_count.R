@@ -1,36 +1,18 @@
 
-#' @title Birds counted between 1960-1965 during Christmas.
-#' @description A function that takes year between 1960-1965 as an input and allows the user to view the three most counted birds in that year. The data set used for this function is the yearly_data.
+#' @title Most counted bird in each year.
+#' @description A function that takes year as an input and allows the user to view the most counted bird in that year. The data set used for this function is the yearly_data.
+#' @param num A numeric input of year between 1921 - 2017.
+#' @examples
+#' yearly_count(1950)
 #' @export
-yearly_count <- function(year) {
-  if (year == 1960) {
-    yearly_data %>%
-      dplyr::filter(year == 1960)
+yearly_count <- function(num) {
+  if (nrow(yearly_data %>% filter(year == num)) > 0) {
+    return (yearly_data %>% filter(year == num) %>% dplyr::slice(1))
   }
-  else if  (year == 1961) {
-    yearly_data %>%
-      dplyr::filter(year == 1961)
-  }
-  else if  (year == 1962) {
-    yearly_data %>%
-      dplyr::filter(year == 1962)
-  }
-  else if  (year == 1963) {
-    yearly_data %>%
-      dplyr::filter(year == 1963)
-  }
-  else if  (year == 1964) {
-    yearly_data %>%
-      dplyr::filter(year == 1964)
-  }
-  else if  (year == 1965) {
-    yearly_data %>%
-      dplyr::filter(year == 1965)
+  else {
+    return (NULL)
   }
 }
-
-
-
 
 
 

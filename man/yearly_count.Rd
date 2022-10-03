@@ -2,10 +2,16 @@
 % Please edit documentation in R/yearly_count.R
 \name{yearly_count}
 \alias{yearly_count}
-\title{Birds counted between 1960-1965 during Christmas.}
+\title{Most counted bird in each year.}
 \usage{
-yearly_count(year)
+yearly_count(num)
+}
+\arguments{
+\item{num}{A numeric input of year between 1921 - 2017.}
 }
 \description{
-A function that takes year between 1960-1965 as an input and allows the user to view the three most counted birds in that year. The data set used for this function is the yearly_data.
+A function that takes year as an input and allows the user to view the most counted bird in that year. The data set used for this function is the yearly_data.
+}
+\examples{
+yearly_count(1950)
 }
