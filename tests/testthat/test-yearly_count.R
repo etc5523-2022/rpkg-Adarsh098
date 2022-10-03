@@ -1,3 +1,4 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+test_that("yearly_count", {
+
+  expect_true(is.data.frame(yearly_count(1960)))
 })

@@ -1,6 +1,6 @@
 library(shiny)
 library(shinythemes)
-library(tidyverse)
+library(dplyr)
 library(lubridate)
 library(plotly)
 
