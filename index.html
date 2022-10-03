@@ -56,8 +56,41 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9">
-This packages contains data about birds counted in Christmas in Ontario from 1921 to 2017. The data is retrieved from the tidytuesday project on GitHub. This package allows users to explore the data with various functions. 
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="rbirdspkg">rbirds.pkg<a class="anchor" aria-label="anchor" href="#rbirdspkg"></a>
+</h1></div>
+<!-- badges: start --><!-- badges: end --><p>The goal of rbirds.pkg is to allow users to explore the bird_counts data using various functions. The data for this package is about various bird species counted by birdwatchers in Hamilton area of Ontario. Birdwatchers have counted birds they saw or heard in a day. Birds are counted every year around Christmas time, since 1921.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the development version of rbirds.pkg from <a href="https://github.com/etc5523-2022/rpkg-Adarsh098" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2022/rpkg-Adarsh098"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<p>This function is used to load the rbirds.pkg package.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://etc5523-2022.github.io/rpkg-Adarsh098/">rbirds.pkg</a></span><span class="op">)</span></span></code></pre></div>
+<p>This function allows the user to view the top five most counted birds in the data set.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/most_birds.html">most_birds</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 5 × 2</span></span>
+<span><span class="co">#&gt;   species           how_many_counted</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                        &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt; 1 European Starling          1491940</span></span>
+<span><span class="co">#&gt; 2 Herring Gull                245717</span></span>
+<span><span class="co">#&gt; 3 Canada Goose                173713</span></span>
+<span><span class="co">#&gt; 4 Long-tailed Duck            154315</span></span>
+<span><span class="co">#&gt; 5 Greater Scaup               152444</span></span></code></pre></div>
+<p>This function helps to determine how many hours it took to count approximate number of birds.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/count_by_hours.html">count_by_hours</a></span><span class="op">(</span><span class="fl">8000</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Between 8 and 116 hours"</span></span></code></pre></div>
+</div>
+</div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
