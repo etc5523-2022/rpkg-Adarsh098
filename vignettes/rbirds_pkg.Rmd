@@ -17,3 +17,27 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(rbirds.pkg)
 ```
+
+This packages contains data about birds counted in Christmas in Ontario from 1921 to 2017. The data is retrieved from the tidytuesday project on GitHub. This package allows users to explore the data with various functions.
+
+These functions are as follows:
+
+ * most_birds() - A function to view most birds counted.
+ 
+ * yearly_count(num = year) - A function that takes year as an input and allows the user to view the most counted bird in that year.
+ 
+ * count_by_hours() - A function that takes the count of birds as an input and allows the user to view the number of hours it took to count that many birds.
+ 
+ * top_five_birds_yearly(num = year) - This function takes year as an input and allows user to view the top five birds counted in that year. It is also a parameterised version of the output of panel four of the shiny application of this package where the input "year" corresponds to the argument "num" in the function.
+
+
+### Examples
+
+```{r ex1}
+count_by_hours(10000)
+```
+
+```{r ex2}
+most_birds()
+```
+
