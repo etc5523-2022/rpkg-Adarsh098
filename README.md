@@ -12,6 +12,17 @@ species counted by birdwatchers in Hamilton area of Ontario.
 Birdwatchers have counted birds they saw or heard in a day. Birds are
 counted every year around Christmas time, since 1921.
 
+The package contains various functions which help to answer questions
+like:
+
+-   which are the most counted birds?
+-   the most counted bird in each year?
+-   top five most counted birds in each year?
+-   how many hours it took to count total birds in a year?.
+
+The package also contains a function which runs a shiny application
+created to analyse various aspects of the data.
+
 ## Installation
 
 You can install the development version of rbirds.pkg from
