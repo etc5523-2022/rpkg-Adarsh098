@@ -22,7 +22,7 @@ The goal of rbirds.pkg is to allow users to explore the bird_counts data using v
 
 ## Installation
 
-You can install the development version of rbirds.pkg from [GitHub](https://github.com/etc5523-2022/rpkg-Adarsh098) with:
+You can install the development version of rbirds.pkg from [rbirds.pkg](https://etc5523-2022.github.io/rpkg-Adarsh098/) with:
 
 ``` r
 # install.packages("devtools")

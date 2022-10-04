@@ -15,7 +15,7 @@ counted every year around Christmas time, since 1921.
 ## Installation
 
 You can install the development version of rbirds.pkg from
-[GitHub](https://github.com/etc5523-2022/rpkg-Adarsh098) with:
+[rbirds.pkg](https://etc5523-2022.github.io/rpkg-Adarsh098/) with:
 
 ``` r
 # install.packages("devtools")
